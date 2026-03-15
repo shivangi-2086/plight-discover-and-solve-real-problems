@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Plight — Innovation Search Engine</title>
+  <title>Search results — Plight</title>
   <link rel="stylesheet" href="styles.css">
   <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
 </head>
@@ -14,9 +14,7 @@
   </header>
 
   <main class="main">
-    <section class="hero">
-      <h1>Discover innovation ideas</h1>
-      <p class="hero-sub">Search by keyword — get overviews, steps, and flowcharts backed by research.</p>
+    <section class="search-bar-section">
       <form class="search-form" id="searchForm" role="search">
         <input
           type="search"
@@ -30,12 +28,10 @@
       </form>
     </section>
 
-    <section class="recommendations" id="recommendations">
-      <h2>Recommended ideas</h2>
-      <div class="recommendations-scroller">
-        <div class="cards-grid cards-grid--scroll" id="cardsGrid"></div>
-      </div>
-      <div class="recommendations-dots" id="recommendationsDots" aria-hidden="true"></div>
+    <section class="results-section" id="resultsSection">
+      <h2 id="resultsHeading">Search results</h2>
+      <div class="cards-grid" id="resultsGrid"></div>
+      <p class="no-results hidden" id="noResults">No ideas match your search. Try different keywords.</p>
     </section>
   </main>
 
